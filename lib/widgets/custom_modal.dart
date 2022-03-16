@@ -200,6 +200,7 @@ class _CustomModalState extends State<CustomModal> {
       email: _emailController.text,
       password: _passwordController.text,
       age: _ageController.text,
+      gender: _genderController.text,
     );
   }
 
@@ -208,29 +209,23 @@ class _CustomModalState extends State<CustomModal> {
     required String email,
     required String password,
     required String age,
+    required String gender,
   }) async {
     try {
       var box = await Hive.openBox('users');
       User userUpdate = User(
-        fullName: fullName,
-        email: email,
+        fullName: fullName.toLowerCase(),
+        email: email.toLowerCase(),
         password: password,
         age: int.parse(age),
-        gender: '',
+        gender: gender.toLowerCase(),
       );
 
       var userExist = box.values
           .where((user) => (user.email.toLowerCase().contains(email)))
           .toList();
 
-      if (widget.user.email == email) {
-        await box.putAt(widget.index, userUpdate);
-        return CustomSnackBar(
-          context,
-          Text('user ${widget.index} updated'),
-          backgroundColor: Colors.green,
-        );
-      } else if (userExist.isEmpty) {
+      if (userExist.isEmpty) {
         await box.putAt(widget.index, userUpdate);
         return CustomSnackBar(
           context,
@@ -238,11 +233,20 @@ class _CustomModalState extends State<CustomModal> {
           backgroundColor: Colors.green,
         );
       } else {
-        return CustomSnackBar(
-          context,
-          const Text('this user already exist!'),
-          backgroundColor: Colors.red,
-        );
+        if (widget.user.email == email) {
+          await box.putAt(widget.index, userUpdate);
+          return CustomSnackBar(
+            context,
+            Text('user ${widget.index} updated'),
+            backgroundColor: Colors.green,
+          );
+        } else {
+          return CustomSnackBar(
+            context,
+            const Text('this user already exist!'),
+            backgroundColor: Colors.red,
+          );
+        }
       }
     } catch (error) {
       return CustomSnackBar(
