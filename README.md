@@ -1,16 +1,83 @@
-# login_signup_hive
+# Flutter Login Signup Hive
 
-A new Flutter project.
+## Table of Contents
 
+* [Demo](#demo)
+* [Screenshots](#screenshots)
+* [Files](#files)
+* [Getting Started](#getting-started)
+  * [Prerequisites](#prerequisites)
+  * [Installation](#installation)
+* [Usage](#usage)
+* [Author](#author)
+
+## Demo
+
+Demo Video
+
+
+## Screenshots
+
+<p align="center">
+    <img src="https://user-images.githubusercontent.com/91828519/158666442-c780dd8b-6d4a-4cc1-b85c-3eccbdd170f6.png" width="200">
+    <img src="https://user-images.githubusercontent.com/91828519/158666466-63ffd06f-ed4a-434b-b7b7-653b5f1df177.png" width="200">
+    <img src="https://user-images.githubusercontent.com/91828519/158666475-932cb540-11ae-4958-99c8-7a409ac9047d.png" width="200">
+    <img src="https://user-images.githubusercontent.com/91828519/158666483-c3ad3a54-c805-4ced-8d02-169aced65c97.png" width="200">
+</p>
+
+## Files
+
+>The file Components have all the reusable widgets that I use on the screens.
+
+    | models
+    |---- user.dart
+    |---- user.g.dart
+    | screens
+    |---- | login
+    |---- |---- sign-in.dart
+    |---- |---- sign-up.dart
+    |---- home_screen.dart
+    |---- login_screen.dart
+    |---- validation.dart
+    | widget
+    |---- base_container.dart
+    |---- custom_button.dart
+    |---- custom_card.dart
+    |---- custom_circular_progress.dart
+    |---- custom_container.dart
+    |---- custom_modal.dart
+    |---- custom_textfield.dart
+    |---- custome_alert_dialog.dart
+    |---- snackbar.dart
+    | constants.dart
+    | main.dart
+    
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+To get a local copy up and running follow these simple steps.
 
-A few resources to get you started if this is your first Flutter project:
+### Prerequisites
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+You need to have **Flutter** installed on your pc.
+* [Install Flutter](https://flutter.dev/docs/get-started/install)
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+### Installation
+
+1. Clone the repo using: `git clone https://github.com/zahrakhoshdel/bmi_calculator.git`
+2. To get the packages needed for the app, run:
+```Dart
+flutter pub get
+```
+
+## Usage
+
+If you have a connected device or emulator running, you can run the app with:
+```Dart
+flutter run
+```
+
+## Author
+
+👤 **Zahra Khoshdel**
+
+- Github: [@zahrakhoshdel](https://github.com/zahrakhoshdel "zahrakhoshdel")
