@@ -19,10 +19,10 @@ Demo Video
 ## Screenshots
 
 <p align="center">
-    <img src="https://user-images.githubusercontent.com/91828519/158666442-c780dd8b-6d4a-4cc1-b85c-3eccbdd170f6.png" width="200">
-    <img src="https://user-images.githubusercontent.com/91828519/158666466-63ffd06f-ed4a-434b-b7b7-653b5f1df177.png" width="200">
-    <img src="https://user-images.githubusercontent.com/91828519/158666475-932cb540-11ae-4958-99c8-7a409ac9047d.png" width="200">
-    <img src="https://user-images.githubusercontent.com/91828519/158666483-c3ad3a54-c805-4ced-8d02-169aced65c97.png" width="200">
+    <img src="https://github.com/zahrakhoshdel/flutter-login-signup/blob/main/screenshots/login-signup.png" width="200">
+    <img src="https://github.com/zahrakhoshdel/flutter-login-signup/blob/main/screenshots/edit.png" width="200">
+    <img src="https://github.com/zahrakhoshdel/flutter-login-signup/blob/main/screenshots/userlist.png" width="200">
+    <img src="https://github.com/zahrakhoshdel/flutter-login-signup/blob/main/screenshots/empty.png" width="200">
 </p>
 
 ## Files
